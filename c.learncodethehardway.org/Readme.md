@@ -1,7 +1,15 @@
 
 # [c.learncodethehardway.org/book/](http://c.learncodethehardway.org/book/)
 
-## building an exercise:
+
+## building all exercises:
+
+```bash
+$ make all
+```
+
+
+## building a single exercise:
 
 ```bash
 $ make exY/main
