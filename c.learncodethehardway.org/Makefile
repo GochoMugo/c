@@ -1,6 +1,10 @@
 CC=gcc
 CFLAGS=-Wall -g
-.PHONY: clean
+EXE="$$(ls | grep "ex" | xargs -I{} echo {}/main)"
 
+all:
+	echo ${EXE} | xargs -I{} make {}
+
+.PHONY: clean
 clean:
-	ls | xargs -I{} rm -f {}/main
+	echo ${EXE} | xargs -I{} rm -f {}
