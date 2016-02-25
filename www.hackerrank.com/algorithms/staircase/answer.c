@@ -6,14 +6,16 @@
 #include <string.h>
 
 void staircase(int height) {
-    char *line = (char *) malloc(height);
+    char *line = NULL;
 
+    line = (char *) malloc(height + 1);
     if (NULL == line) {
         perror(NULL);
         exit(1);
     }
 
     memset(line, ' ', height);
+    line[height + 1] = '\0';
 
     while (0 <= --height) {
         line[height] = '#';
