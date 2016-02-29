@@ -17,7 +17,7 @@ void time_convert(char *time_am_pm, char **time_24) {
         exit(1);
     }
 
-    sscanf(time_am_pm, "%d:%d:%d%s", &hours, &minutes, &seconds, am_pm);
+    sscanf(time_am_pm, "%d:%d:%d%2s", &hours, &minutes, &seconds, am_pm);
 
     if (0 == strcmp("PM", am_pm)) {
         if (12 != hours) hours = hours + 12;
