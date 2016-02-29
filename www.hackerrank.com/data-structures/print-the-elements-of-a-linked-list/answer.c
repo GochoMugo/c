@@ -2,11 +2,7 @@
 /* -Wall -O3 */
 
 #include <stdio.h>
-
-typedef struct Node {
-    int data;
-    struct Node *next;
-} Node;
+#include "../lib/node.h"
 
 void Print(Node *head) {
     if (NULL == head) return;
