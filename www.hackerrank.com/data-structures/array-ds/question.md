@@ -1,5 +1,5 @@
 
-[&mdash original question](https://www.hackerrank.com/challenges/arrays-ds)
+[&mdash; original question](https://www.hackerrank.com/challenges/arrays-ds)
 
 An array is a series of elements of the same type placed in contiguous memory
 locations that can be individually referenced by adding an index to a unique
